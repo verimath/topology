@@ -13,7 +13,6 @@ Require Export Classical_Prop.
 Require Import ImageImplicit.
 Require Import FunctionProperties.
 
-Local Unset Injection On Proofs.
 Set Asymmetric Patterns.
 Unset Standard Proposition Elimination Names.
 

@@ -1,6 +1,7 @@
-Require Export Ensembles.
+(*Require Export Ensembles.*)
 Require Import EnsemblesImplicit.
 Require Import EnsemblesSpec.
+
 
 Definition inverse_image {X Y:Type} (f:X->Y) (T:Ensemble Y) : Ensemble X :=
   [ x:X | In T (f x) ].
@@ -17,8 +18,7 @@ constructor.
 auto.
 Qed.
 
-Lemma inverse_image_empty: forall {X Y:Type} (f:X->Y),
-  inverse_image f Empty_set = Empty_set.
+Lemma inverse_image_empty: forall {X Y:Type} (f:X->Y), inverse_image f Empty_set = Empty_set.
 Proof.
 intros.
 apply Extensionality_Ensembles; split; red; intros.

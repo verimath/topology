@@ -10,7 +10,6 @@ Require Import Families.
 Require Import FiniteTypes.
 
 Local Unset Standard Proposition Elimination Names.
-Local Unset Injection On Proofs.
 Global Set Asymmetric Patterns.
 
 Definition first_countable (X:TopologicalSpace) : Prop :=

@@ -2,6 +2,7 @@ Require Import TopologicalSpaces.
 Require Import WeakTopology.
 Require Import InverseImage.
 Require Import Continuity.
+Require Import Ensembles.
 
 Section Subspace.
 
@@ -30,5 +31,5 @@ Qed.
 
 End Subspace.
 
-Implicit Arguments SubspaceTopology [[X]].
-Implicit Arguments subspace_inc [[X]].
+Arguments SubspaceTopology [X].
+Arguments subspace_inc [X].

@@ -86,8 +86,8 @@ Definition complete : Prop :=
 
 End Completeness.
 
-Implicit Arguments cauchy [[X]].
-Implicit Arguments complete [[X]].
+Arguments cauchy [X].
+Arguments complete [X].
 
 Section closed_subset_of_complete.
 

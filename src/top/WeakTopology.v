@@ -111,8 +111,8 @@ End WeakTopology_and_Nets.
 
 End WeakTopology.
 
-Implicit Arguments WeakTopology [[X] [Y] [A]].
-Implicit Arguments weak_topology_subbasis [[X] [Y] [A]].
+Arguments WeakTopology [X] [Y] [A] : rename.
+Arguments weak_topology_subbasis [X] [Y] [A] : rename.
 
 Section WeakTopology1.
 
@@ -197,4 +197,4 @@ Qed.
 
 End WeakTopology1.
 
-Implicit Arguments WeakTopology1 [[X] [Y]].
+Arguments WeakTopology1 [X] [Y].
