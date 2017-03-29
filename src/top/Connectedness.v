@@ -1,7 +1,4 @@
-Require Import TopologicalSpaces.
-Require Import InverseImage.
-Require Import FunctionProperties.
-Require Import IndexedFamilies.
+Require Export TopologicalSpaces.
 
 Definition clopen {X:TopologicalSpace} (S:Ensemble (point_set X))
   : Prop :=

@@ -1,6 +1,6 @@
 Require Export Image.
 
-Implicit Arguments Im [[U] [V]].
+Arguments Im [U] [V].
 Arguments Im_def [U] [V].
 Arguments Im_add [U] [V].
 Arguments image_empty [U] [V].

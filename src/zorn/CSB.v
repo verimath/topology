@@ -1,7 +1,7 @@
-Require Import FunctionProperties.
+Require Export FunctionProperties.
 Require Import DecidableDec.
 Require Import Description.
-Require Export Classical.
+Require Import Classical.
 
 Unset Standard Proposition Elimination Names.
 

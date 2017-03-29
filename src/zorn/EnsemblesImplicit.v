@@ -1,5 +1,4 @@
 Require Export Ensembles.
-(*Require Export Classical_sets.*)
 
 Arguments In [U].
 Arguments Included [U].
@@ -10,7 +9,6 @@ Arguments Intersection [U].
 Arguments Couple [U].
 Arguments Triple [U].
 Implicit Arguments Complement [[U]].
-(*Arguments Complement_Complement [U]. *)
 Arguments Setminus [U].
 Arguments Subtract [U].
 Arguments Disjoint [U].

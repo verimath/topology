@@ -1,28 +1,12 @@
-Require Import Completeness.
+Require Export Completeness.
 Require Import UniformTopology.
 Require Import RTopology.
-Require Import Reals.
-Require Import DirectedSets.
-Require Import Nets.
-Require Import SupInf.
-Require Import InteriorsClosures.
-Require Import MetricSpaces.
-Require Import CountabilityAxioms.
-Require Import FunctionProperties.
-Require Import TopologicalSpaces.
-Require Import Ensembles.
-Require Import EnsemblesImplicit.
-Require Import Image.
-Require Import ZornsLemma.
-Require Import ImageImplicit.
-Require Import Rbasic_fun.
-Require Import RIneq.
 
 (*Local Unset Standard Proposition Elimination Names.*)
 
 Arguments injective {_ _} _.
 
-(*
+
 Lemma completion_exists: forall (X:Type) (d:X->X->R) (d_metric:metric d),
   exists Y:Type, exists i:X->Y, exists d':Y->Y->R,
   exists d'_metric:metric d',
@@ -185,4 +169,3 @@ red; intros.
 contradiction (x O).
 
 Qed.
-*)

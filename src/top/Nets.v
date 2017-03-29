@@ -1,14 +1,7 @@
-Require Import TopologicalSpaces.
-Require Import DirectedSets.
-Require Import InteriorsClosures.
-Require Import Continuity.
-Require Import Neighborhoods.
-Require Import InverseImage.
-Require Export Relations.
-Require Import EnsemblesImplicit.
-Require Import Coq.Logic.Classical_Prop.
-Require Import Coq.Sets.Classical_sets.
-
+Require Export TopologicalSpaces.
+Require Export DirectedSets.
+Require Export InteriorsClosures.
+Require Export Continuity.
 
 Local Unset Standard Proposition Elimination Names.
 Set Asymmetric Patterns.
@@ -90,7 +83,8 @@ Arguments net_limit [I] [X].
 Arguments net_cluster_point [I] [X].
 Arguments net_limit_is_cluster_point [I] [X].
 Arguments net_limit_in_closure [I] [X].
-Implicit Arguments net_cluster_point_in_closure [[I] [X]].
+(*Implicit Arguments net_cluster_point_in_closure [[I] [X]].*)
+Arguments net_cluster_point_in_closure [I] [X].
 
 Section neighborhood_net.
 

@@ -1,4 +1,4 @@
-Require Import Families.
+Require Export Families.
 Require Import EnsemblesSpec.
 
 Local Unset Standard Proposition Elimination Names.

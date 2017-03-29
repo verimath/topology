@@ -1,18 +1,4 @@
-Require Import MetricSpaces.
-Require Import ZornsLemma.
-Require Import SupInf.
-Require Import Nets.
-Require Import Continuity.
-Require Import InteriorsClosures.
-Require Import CountabilityAxioms.
-Require Import Neighborhoods.
-Require Import NeighborhoodBases.
-Require Import InverseImage.
-Require Import DirectedSets.
-Require Import TopologicalSpaces.
-Require Import SeparatednessAxioms.
-Require Import ImageImplicit.
-Require Import IndexedFamilies.
+Require Export MetricSpaces.
 
 Local Unset Standard Proposition Elimination Names.
 

@@ -1,4 +1,11 @@
-Require Import FiniteTypes.
+Require Export FiniteTypes.
+Require Import EnsemblesImplicit.
+Require Import ClassicalChoice.
+Require Import Arith.
+Require Import FunctionalExtensionality.
+Require Import EnsemblesSpec.
+(*
+Require Export FiniteTypes.
 Require Import EnsemblesImplicit.
 Require Import ClassicalChoice.
 Require Import Arith.
@@ -8,7 +15,7 @@ Require Import FunctionProperties.
 Require Import ImageImplicit.
 Require Import TopologicalSpaces.
 Require Import Image.
-
+*)
 Unset Standard Proposition Elimination Names.
 
 Lemma finite_nat_initial_segment: forall n:nat,

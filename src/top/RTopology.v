@@ -1,27 +1,12 @@
-Require Import TopologicalSpaces.
-Require Import OrderTopology.
-Require Import Reals.
-Require Import Continuity.
-Require Import Nets.
-Require Import SupInf.
-Require Import InverseImage.
-Require Import Subbases.
-Require Import SubspaceTopology.
-Require Import EnsemblesSpec.
-Require Import CountabilityAxioms.
-Require Import CountableTypes.
-Require Import DirectedSets.
-Require Import InteriorsClosures.
-Require Import Families.
-Require Import Ensembles.
-Require Import EnsemblesImplicit.
-Require Import IndexedFamilies.
+Require Export TopologicalSpaces.
+Require Export OrderTopology.
+Require Export Reals.
 
 Local Unset Standard Proposition Elimination Names.
 
 Definition RTop := OrderTopology Rle.
 
-Require Import MetricSpaces.
+Require Export MetricSpaces.
 
 Definition R_metric (x y:R) : R := Rabs (y-x).
 
@@ -287,7 +272,7 @@ apply Rlt_minus in H3.
 replace (-r - (Q2R q - x)) with (x - r - Q2R q); trivial; ring.
 Qed.
 
-Require Import Compactness.
+Require Export Compactness.
 
 Lemma bounded_real_net_has_cluster_point: forall (I:DirectedSet)
   (x:Net I RTop) (a b:R), (forall i:DS_set I, a <= x i <= b) ->
@@ -468,7 +453,7 @@ destruct (total_order_T x1 y0) as [[|]|]; auto with real.
 
 assert (Ensembles.In [x:point_set RTop | a <= x <= b] x0).
 rewrite <- (closure_fixes_closed _ H1).
-apply net_cluster_point_in_closure with y.
+apply net_cluster_point_in_closure with _ y.
 destruct H as [i0].
 exists i0.
 intros.
@@ -616,7 +601,7 @@ replace (-x' - -x) with (x-x'); try ring.
 rewrite Rabs_minus_sym; trivial.
 Qed.
 
-Require Import Connectedness.
+Require Export Connectedness.
 
 Lemma R_connected: connected RTop.
 Proof.
@@ -792,7 +777,7 @@ apply Rinv_0_lt_compat.
 auto with real.
 Qed.
 
-Require Import Completeness.
+Require Export Completeness.
 
 Lemma R_cauchy_sequence_bounded: forall x:nat->R,
   cauchy R_metric x -> bound (Im Full_set x).

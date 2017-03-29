@@ -24,7 +24,6 @@ constructor.
 exact H.
 Qed.
 
-(*
 Definition even_example : Ensemble nat :=
   [ n:nat | exists m:nat, n=2*m ].
 
@@ -40,4 +39,4 @@ rewrite H.
 Require Import Arith.
 ring.
 Qed.
-*)
+

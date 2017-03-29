@@ -1,6 +1,7 @@
-(*Require Export Ensembles.*)
+
+Require Export Ensembles.
 Require Import EnsemblesImplicit.
-Require Import EnsemblesSpec.
+Require Export EnsemblesSpec.
 
 
 Definition inverse_image {X Y:Type} (f:X->Y) (T:Ensemble Y) : Ensemble X :=

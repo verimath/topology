@@ -1,4 +1,4 @@
-Require Import Families.
+Require Export Families.
 Require Export Image.
 Require Import ImageImplicit.
 

@@ -1,9 +1,8 @@
-Require Import TopologicalSpaces.
-Require Import Neighborhoods.
-Require Import OpenBases.
-Require Import IndexedFamilies.
-Require Import Families.
-Require Import EnsemblesSpec.
+Require Export TopologicalSpaces.
+Require Export Neighborhoods.
+Require Export OpenBases.
+Require Export IndexedFamilies.
+Require Export EnsemblesSpec.
 
 Record neighborhood_basis {X:TopologicalSpace}
   (NB:Family (point_set X)) (x:point_set X) : Prop := {

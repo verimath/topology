@@ -1,8 +1,5 @@
-Require Import TopologicalSpaces.
+Require Export TopologicalSpaces.
 Require Import WeakTopology.
-Require Import InverseImage.
-Require Import Continuity.
-Require Import Ensembles.
 
 Section Subspace.
 

@@ -1,13 +1,6 @@
-Require Import TopologicalSpaces.
-Require Import Filters.
-Require Import Neighborhoods.
-Require Import Ensembles.
-Require Import EnsemblesImplicit.
-Require Import EnsemblesSpec.
-Require Import InteriorsClosures.
-Require Import InverseImage.
-Require Import Coq.Sets.Classical_sets.
-Require Import Coq.Logic.Classical_Prop.
+Require Export TopologicalSpaces.
+Require Export Filters.
+Require Export Neighborhoods.
 
 Definition neighborhood_filter {X:TopologicalSpace} (x0:point_set X) : Filter (point_set X).
 refine (Build_Filter _ [ N : Ensemble (point_set X) | neighborhood N x0 ] _ _ _ _).

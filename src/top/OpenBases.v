@@ -1,8 +1,6 @@
-Require Import TopologicalSpaces.
+Require Export TopologicalSpaces.
 Require Import ClassicalChoice.
 Require Import EnsemblesSpec.
-Require Import Families.
-Require Import IndexedFamilies.
 
 Local Unset Standard Proposition Elimination Names.
 

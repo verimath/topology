@@ -1,12 +1,6 @@
-Require Import Subbases.
-Require Import EnsemblesSpec.
-Require Import Relations.
-Require Import Families.
-Require Import Relation_Definitions_Implicit.
-Require Import SeparatednessAxioms.
-Require Import TopologicalSpaces.
-Require Import InteriorsClosures.
-Require Import Classical.
+Require Export Subbases.
+Require Export Relation_Definitions_Implicit.
+Require Export SeparatednessAxioms.
 
 Section OrderTopology.
 

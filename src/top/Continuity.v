@@ -1,12 +1,9 @@
-Require Import TopologicalSpaces.
-Require Import Neighborhoods.
-Require Import InverseImage.
-Require Import OpenBases.
-Require Import InteriorsClosures.
-Require Import NeighborhoodBases.
-Require Import Subbases.
-Require Import Families.
-Require Import IndexedFamilies.
+Require Export TopologicalSpaces.
+Require Export Neighborhoods.
+Require Export InverseImage.
+Require Export OpenBases.
+Require Export NeighborhoodBases.
+Require Export Subbases.
 
 Section continuity.
 

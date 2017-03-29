@@ -1,9 +1,6 @@
-Require Import TopologicalSpaces.
-Require Import Continuity.
-Require Import InverseImage.
-Require Import ImageImplicit.
-Require Import SubspaceTopology.
-Require Import FunctionProperties.
+Require Export TopologicalSpaces.
+Require Export Continuity.
+Require Export SubspaceTopology.
 
 Local Unset Standard Proposition Elimination Names.
 

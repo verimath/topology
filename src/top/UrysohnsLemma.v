@@ -79,12 +79,6 @@ apply dr_eq_refl.
 Qed.
 
 Require Export QArith.
-(*
-Require Import Datatypes.
-Require Import Nat.
-Require Import EnsemblesSpec.
-Require Import SupInf.
-*)
 
 Fixpoint pos_power2 (n:nat) : positive := match n with
   | O => 1%positive
@@ -208,16 +202,8 @@ Qed.
 
 Section Urysohns_Lemma_construction.
 
-Require Import TopologicalSpaces.
-Require Import InteriorsClosures.
-Require Import EnsemblesSpec.
-Require Import SupInf.
-Require Import ImageImplicit.
-Require Import Continuity.
-Require Import OrderTopology.
-Require Import Subbases.
-Require Import IndexedFamilies.
-Require Import Families.
+Require Export TopologicalSpaces.
+Require Export InteriorsClosures.
 
 Variable X:TopologicalSpace.
 Variable normal_sep_fun: forall F U:Ensemble (point_set X),
@@ -563,10 +549,6 @@ field.
 destruct H0.
 right; trivial.
 Qed.
-
-Require Import EnsemblesImplicit.
-Require Import Ensembles.
-Require Import SeparatednessAxioms.
 
 Lemma Urysohns_Lemma_function_continuous:
   continuous Urysohns_Lemma_function.

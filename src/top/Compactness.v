@@ -1,17 +1,7 @@
-Require Import TopologicalSpaces.
-Require Import Nets.
-Require Import FiniteTypes.
-Require Import FilterLimits.
-Require Import Continuity.
-Require Import EnsemblesSpec.
-Require Import Filters.
-Require Import InteriorsClosures.
-Require Import DirectedSets.
-Require Import InverseImage.
-Require Import Families.
-Require Import IndexedFamilies.
-Require Import Ensembles.
-Require Import FunctionProperties.
+Require Export TopologicalSpaces.
+Require Export Nets.
+Require Export FilterLimits.
+Require Export Continuity.
 
 Local Unset Standard Proposition Elimination Names.
 Set Asymmetric Patterns.
@@ -351,8 +341,8 @@ apply filter_to_net_cluster_point_impl_filter_cluster_point.
 trivial.
 Qed.
 
-Require Import SeparatednessAxioms.
-Require Import SubspaceTopology.
+Require Export SeparatednessAxioms.
+Require Export SubspaceTopology.
 
 Lemma compact_closed: forall (X:TopologicalSpace)
   (S:Ensemble (point_set X)), Hausdorff X ->

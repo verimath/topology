@@ -1,13 +1,13 @@
-Require Import Ensembles.
+Require Export Ensembles.
 Require Import EnsemblesImplicit.
-Require Import Image.
+Require Export Image.
 Require Import ImageImplicit.
-Require Import Relation_Definitions.
+Require Export Relation_Definitions.
 Require Import Relation_Definitions_Implicit.
 Require Import Description.
 Require Import ProofIrrelevance.
 Require Import Proj1SigInjective.
-Require Import EnsemblesSpec.
+Require Export EnsemblesSpec.
 
 Unset Standard Proposition Elimination Names.
 

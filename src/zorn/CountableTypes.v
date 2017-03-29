@@ -1,17 +1,12 @@
-Require Import FiniteTypes.
+Require Export FiniteTypes.
+Require Export Relation_Definitions.
 Require Import InfiniteTypes.
 Require Import CSB.
-Require Export Arith.
-Require Export Ensembles.
 Require Import DecidableDec.
-Require Import Relation_Definitions.
 Require Import Relation_Definitions_Implicit.
 Require Import Description.
 Require Import Proj1SigInjective.
 Require Import DependentTypeChoice.
-Require Export Classical_Prop.
-Require Import ImageImplicit.
-Require Import FunctionProperties.
 
 Set Asymmetric Patterns.
 Unset Standard Proposition Elimination Names.

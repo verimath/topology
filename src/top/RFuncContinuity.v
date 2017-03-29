@@ -1,17 +1,5 @@
-Require Import RTopology.
-Require Import Completion.
-Require Import Reals.
-Require Import EnsemblesImplicit.
-Require Import EnsemblesSpec.
-Require Import Nets.
-Require Import ProductTopology.
-Require Import ImageImplicit.
-Require Import Neighborhoods.
-Require Import NeighborhoodBases.
-Require Import TopologicalSpaces.
-Require Import Continuity.
-Require Import MetricSpaces.
-Require Import SubspaceTopology.
+Require Export RTopology.
+Require Export ProductTopology.
 
 Local Unset Standard Proposition Elimination Names.
 

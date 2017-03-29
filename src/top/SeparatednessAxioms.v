@@ -1,11 +1,5 @@
-Require Import TopologicalSpaces.
+Require Export TopologicalSpaces.
 Require Import InteriorsClosures.
-Require Import DirectedSets.
-Require Import Ensembles.
-Require Import Classical_Pred_Type.
-Require Import Classical_Prop.
-Require Import Ensembles.
-
 
 Local Unset Standard Proposition Elimination Names.
 

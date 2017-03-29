@@ -1,17 +1,6 @@
-Require Import TopologicalSpaces.
-Require Import WeakTopology.
+Require Export TopologicalSpaces.
+Require Export WeakTopology.
 Require Import DependentTypeChoice.
-Require Import Continuity.
-Require Import DirectedSets.
-Require Import Nets.
-Require Import Filters.
-Require Import Subbases.
-Require Import OpenBases.
-Require Import Neighborhoods.
-Require Import InverseImage.
-Require Import EnsemblesSpec.
-Require Import IndexedFamilies.
-Require Import Families.
 
 Section product_topology.
 

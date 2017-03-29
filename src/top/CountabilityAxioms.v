@@ -1,13 +1,7 @@
-Require Import TopologicalSpaces.
-Require Import CountableTypes.
-Require Import NeighborhoodBases.
+Require Export TopologicalSpaces.
+Require Export CountableTypes.
+Require Export NeighborhoodBases.
 Require Import EnsemblesSpec.
-Require Import InteriorsClosures.
-Require Import Neighborhoods.
-Require Import DirectedSets.
-Require Import OpenBases.
-Require Import Families.
-Require Import FiniteTypes.
 
 Local Unset Standard Proposition Elimination Names.
 Global Set Asymmetric Patterns.

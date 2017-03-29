@@ -1,18 +1,10 @@
-Require Import Reals.
-Require Import Nets.
-Require Import DirectedSets.
-Require Import Neighborhoods.
-Require Import InverseImage.
-Require Import CountableTypes.
-Require Import TopologicalSpaces.
-Require Import NeighborhoodBases.
+
+Require Export Reals.
+Require Export Nets.
+Require Export TopologicalSpaces.
+Require Export NeighborhoodBases.
 Require Import RationalsInReals.
-Require Import Relations.
-Require Import Ensembles.
-Require Import EnsemblesSpec.
-Require Import EnsemblesImplicit.
-Require Import InteriorsClosures.
-Require Import Families.
+Require Export EnsemblesSpec.
 
 Local Unset Standard Proposition Elimination Names.
 
@@ -266,7 +258,7 @@ constructor.
 apply H7; trivial.
 Qed.
 
-Require Import CountabilityAxioms.
+Require Export CountabilityAxioms.
 
 Lemma metrizable_impl_first_countable: forall X:TopologicalSpace,
   metrizable X -> first_countable X.
@@ -525,7 +517,7 @@ Hypothesis d_is_metric: metric d.
 Variable S:Ensemble X.
 Hypothesis S_nonempty: Inhabited S.
 
-Require Import SupInf.
+Require Export SupInf.
 
 Definition dist_to_set (x:X) : R.
 refine (proj1_sig (inf (Im S (d x)) _ _)).
@@ -725,7 +717,7 @@ Qed.
 
 End dist_to_set_and_topology.
 
-Require Import SeparatednessAxioms.
+Require Export SeparatednessAxioms.
 
 Lemma metrizable_impl_normal_sep: forall X:TopologicalSpace,
   metrizable X -> normal_sep X.

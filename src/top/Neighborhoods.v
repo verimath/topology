@@ -1,7 +1,7 @@
-Require Import TopologicalSpaces.
-Require Import Ensembles.
- Require Import EnsemblesImplicit.
-Require Import InteriorsClosures.
+Require Export TopologicalSpaces.
+Require Export Ensembles.
+Require Import EnsemblesImplicit.
+Require Export InteriorsClosures.
 
 Definition open_neighborhood {X:TopologicalSpace}
   (U:Ensemble (point_set X)) (x:point_set X) :=

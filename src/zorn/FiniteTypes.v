@@ -1,13 +1,12 @@
-Require Import Ensembles.
+Require Export Ensembles.
 Require Import EnsemblesImplicit.
-Require Import Image.
+Require Export Image.
 Require Import ImageImplicit.
-Require Import Finite_sets.
-Require Import FunctionProperties.
+Require Export Finite_sets.
+Require Export FunctionProperties.
 Require Import DecidableDec.
 Require Import ProofIrrelevance.
 Require Import Description.
-Require Import FunctionProperties.
 
 Set Asymmetric Patterns.
 Unset Standard Proposition Elimination Names.

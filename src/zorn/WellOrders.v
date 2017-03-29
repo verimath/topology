@@ -1,4 +1,4 @@
-Require Import Relation_Definitions.
+Require Export Relation_Definitions.
 Require Import Relation_Definitions_Implicit.
 Require Import Classical_Wf.
 Require Import Description.
@@ -12,8 +12,8 @@ Unset Standard Proposition Elimination Names.
 
 Section WellOrder.
 
-(* this definition is for the strict order, e.g. the
-   element relation for ordinals of ZFC *)
+(* this definition is for the strict order, e.g. the element relation for ordinals of ZFC *)
+
 Variable T:Type.
 
 Definition total_strict_order (R:relation T) : Prop :=

@@ -1,7 +1,7 @@
 Require Import Classical.
-Require Import Ensembles.
+Require Export Ensembles.
 Require Import EnsemblesImplicit.
-Require Import Relation_Definitions.
+Require Export Relation_Definitions.
 Require Import Relation_Definitions_Implicit.
 Require Import EnsemblesSpec.
 

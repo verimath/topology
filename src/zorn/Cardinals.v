@@ -1,5 +1,5 @@
-Require Import FunctionProperties.
-Require Import Relation_Definitions.
+Require Export FunctionProperties.
+Require Export Relation_Definitions.
 Require Import Relation_Definitions_Implicit.
 Require Import CSB.
 Require Import EnsemblesSpec.

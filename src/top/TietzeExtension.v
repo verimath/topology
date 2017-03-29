@@ -1,13 +1,5 @@
-Require Import TopologicalSpaces.
-Require Import EnsemblesImplicit.
-Require Import RTopology.
-Require Import SubspaceTopology.
-Require Import Continuity.
-Require Import SeparatednessAxioms.
-Require Import Families.
-Require Import IndexedFamilies.
-Require Import FiniteTypes.
-Require Import EnsemblesSpec.
+Require Export RTopology.
+Require Export SeparatednessAxioms.
 
 Local Unset Standard Proposition Elimination Names.
 
@@ -24,13 +16,15 @@ Hypothesis f_continuous: continuous f.
 Hypothesis f_bound: forall x:point_set (SubspaceTopology F), -1 <= f x <= 1.
 Hypothesis X_nonempty: inhabited (point_set X).
 
-Variable Urysohns_lemma_function:
-  forall F G:Ensemble (point_set X),
+
+Variable Urysohns_lemma_function: forall F G:Ensemble (point_set X),
   closed F -> closed G -> Intersection F G = Empty_set ->
   { f:point_set X -> point_set RTop |
-  continuous f /\ (forall x:point_set X, 0 <= f x <= 1) /\
-  (forall x:point_set X, In F x -> f x = 0) /\
-  (forall x:point_set X, In G x -> f x = 1) }.
+    continuous f /\ (forall x:point_set X, 0 <= f x <= 1) /\
+    (forall x:point_set X, In F x -> f x = 0) /\
+    (forall x:point_set X, In G x -> f x = 1)
+  }.
+
 
 Lemma subspace_inc_takes_closed_to_closed:
   forall G:Ensemble (point_set (SubspaceTopology F)),
@@ -38,8 +32,7 @@ Lemma subspace_inc_takes_closed_to_closed:
 Proof.
 intros.
 destruct (subspace_topology_topology _ _ _ H) as [U []].
-replace (Im G (subspace_inc F)) with
-  (Intersection F (Complement U)).
+replace (Im G (subspace_inc F)) with (Intersection F (Complement U)).
 apply closed_intersection2; trivial.
 red; rewrite Complement_Complement; trivial.
 apply Extensionality_Ensembles; split; red; intros.
@@ -77,15 +70,12 @@ Section extension_approximation.
 
 Variable f0:point_set (SubspaceTopology F) -> point_set RTop.
 Hypothesis f0_cont: continuous f0.
-Hypothesis f0_bound: forall x:point_set (SubspaceTopology F),
-                     -1 <= f0 x <= 1.
+Hypothesis f0_bound: forall x:point_set (SubspaceTopology F), -1 <= f0 x <= 1.
 
 Definition extension_approximation: point_set X -> point_set RTop.
 refine (
-  let F0:=Im [ x:point_set (SubspaceTopology F) | f0 x <= -1/3 ]
-             (subspace_inc F) in
-  let G0:=Im [ x:point_set (SubspaceTopology F) | f0 x >= 1/3 ]
-             (subspace_inc F) in
+  let F0:=Im [ x:point_set (SubspaceTopology F) | f0 x <= -1/3 ] (subspace_inc F) in
+  let G0:=Im [ x:point_set (SubspaceTopology F) | f0 x >= 1/3 ] (subspace_inc F) in
   let g:=proj1_sig (Urysohns_lemma_function F0 G0 _ _ _) in
   fun x:point_set X => -1/3 + 2/3 * g x).
 apply subspace_inc_takes_closed_to_closed.

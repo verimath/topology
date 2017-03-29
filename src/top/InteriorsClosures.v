@@ -1,7 +1,5 @@
-Require Import TopologicalSpaces.
-Require Import EnsemblesSpec.
-Require Import Families.
-Require Import Coq.Sets.Classical_sets.
+Require Export TopologicalSpaces.
+Require Export EnsemblesSpec.
 
 Section interior_closure.
 

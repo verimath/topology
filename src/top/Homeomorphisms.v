@@ -1,8 +1,5 @@
-Require Import TopologicalSpaces.
-Require Import Continuity.
-Require Import InverseImage.
-Require Import FunctionProperties.
-Require Import ImageImplicit.
+Require Export TopologicalSpaces.
+Require Export Continuity.
 
 Inductive homeomorphism {X Y:TopologicalSpace}
   (f:point_set X -> point_set Y) : Prop :=

@@ -1,14 +1,5 @@
-Require Import FilterLimits.
-Require Import Nets.
-Require Import TopologicalSpaces.
-Require Import DirectedSets.
-Require Import EnsemblesSpec.
-Require Import Filters.
-Require Import InteriorsClosures.
-Require Import Relations.
-Require Import Neighborhoods.
-Require Import Coq.Sets.Image.
-Require Import Families.
+Require Export FilterLimits.
+Require Export Nets.
 
 Section net_tail_filter.
 

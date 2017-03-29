@@ -1,19 +1,17 @@
-Require Import Ensembles.
+Require Export Ensembles.
 Require Import EnsemblesImplicit.
-Require Import Families.
-Require Import IndexedFamilies.
-Require Import FiniteTypes.
+Require Export Families.
+Require Export IndexedFamilies.
+Require Export FiniteTypes.
 Require Import EnsemblesSpec.
 
-Record TopologicalSpace : Type := {
-  point_set : Type;
-  open : Ensemble point_set -> Prop;
-  open_family_union : forall F : Family point_set,
-    (forall S : Ensemble point_set, In F S -> open S) ->
-    open (FamilyUnion F);
-  open_intersection2: forall U V:Ensemble point_set,
-    open U -> open V -> open (Intersection U V);
-  open_full : open Full_set
+Record TopologicalSpace: Type := {
+  point_set :> Type;
+  open: Ensemble point_set -> Prop;
+  open_family_union:  forall F: Family point_set,
+                     (forall S: Ensemble point_set, In F S -> open S) -> open (FamilyUnion F);
+  open_intersection2: forall U V:Ensemble point_set, open U -> open V -> open (Intersection U V);
+  open_full: open Full_set
 }.
 
 Arguments open [t].

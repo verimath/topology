@@ -1,9 +1,7 @@
-Require Import TopologicalSpaces.
-Require Import OpenBases.
-Require Import FiniteTypes.
-Require Import IndexedFamilies.
-Require Import Families.
-Require Import EnsemblesSpec.
+Require Export TopologicalSpaces.
+Require Export OpenBases.
+Require Export FiniteTypes.
+Require Export EnsemblesSpec.
 
 Section Subbasis.
 

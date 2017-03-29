@@ -1,8 +1,6 @@
-Require Import TopologicalSpaces.
-Require Import InverseImage.
-Require Import Continuity.
-Require Import Families.
-Require Import IndexedFamilies.
+Require Export TopologicalSpaces.
+Require Export InverseImage.
+Require Export Continuity.
 
 Section StrongTopology.
 

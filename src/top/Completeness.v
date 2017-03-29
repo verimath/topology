@@ -1,13 +1,4 @@
-Require Import Reals.
-Require Import Nets.
-Require Import DirectedSets.
-Require Import Ensembles.
-Require Import MetricSpaces.
-Require Import Neighborhoods.
-Require Import InteriorsClosures.
-Require Import TopologicalSpaces.
-Require Import CountabilityAxioms.
-Require Import SeparatednessAxioms.
+Require Export MetricSpaces.
 
 Local Unset Standard Proposition Elimination Names.
 
